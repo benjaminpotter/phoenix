@@ -85,7 +85,7 @@ void Phoenix::setup(config conf) {
     // retrieved and redelivered in the correct order.
     Arena::SetNodeValue<bool>(
         device->GetTLStreamNodeMap(),
-        "StreamAutoNegotiatePacketSize",
+        "StreamPacketResendEnable",
         true);
 
     // Start the device streaming.
