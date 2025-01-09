@@ -50,7 +50,7 @@ bool PhoenixNode::setup_camera() {
 
     config conf;
 
-    std::string camera_name = "PHX050S-P/Q";
+    std::string camera_name = "PHX050S-P";
 
     // Filepath to a camera info YAML.
     // Enables camera calibration pipeline.
@@ -122,7 +122,6 @@ void PhoenixNode::take_and_publish() {
     camera_info.header.stamp = image_msg.header.stamp;
 
     image_pub.publish(image_msg, camera_info);
-
 }
 
 void PhoenixNode::load_test_pattern_and_publish() {

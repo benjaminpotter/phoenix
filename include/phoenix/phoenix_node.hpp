@@ -57,6 +57,7 @@ private:
 
     // std::string camera_name;
     // std::string pixel_format_str;
+    //  mode;
 
     // We do not really _choose_ image size. These are intrinsic to the image
     // sensor size in the camera.
